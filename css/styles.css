@@ -548,5 +548,21 @@ header {
     text-transform: none;
     color: var(--text-description-color);
 }
+.modal-button {
+    display: block;
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    fill: var(--leading-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--navhover-btn-clr);
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-
+.modal-icon {
+    display: block;
+    margin: 0 auto;
+}
