@@ -202,6 +202,7 @@ header {
     border-radius: 4px;
     margin-left:auto;
     margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover, 
 .btn:focus {
@@ -351,6 +352,7 @@ header {
     align-items: center;
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .member-link:hover,
 .member-link:focus {background-color: var(--nav-link-clr-active);
@@ -392,7 +394,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-for-tablink)
+    color: var(--color-for-tablink);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .tab-link:hover,
 .tab-link:focus {
@@ -465,6 +468,7 @@ header {
     align-items: center;
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-link:hover, .footer-social-link:focus {
     background-color: #31D0AA;
@@ -497,6 +501,7 @@ header {
     border: #E7E9FC 1px solid;
     border-radius: 4px;
     min-width: auto;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-btn:hover,
 .main-btn:focus {
