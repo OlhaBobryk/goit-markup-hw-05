@@ -130,6 +130,9 @@ header {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .inline {
     font-size: 16px;
@@ -599,6 +602,7 @@ header {
 .modal-icon {
     display: block;
     margin: 0 auto;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
     position: fixed;
@@ -611,7 +615,7 @@ header {
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
-    transition: opacity 200ms ease, visibility 200ms ease;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
     position: absolute;
@@ -620,12 +624,12 @@ header {
     transform: translate(-50%, -50%) rotate(0) scale(1);
     opacity: 1;
     width: 408px;
-    min-height: 576px;
+    min-height: 584px;
     padding: 24px;
     background-color: var(--color-modwindow);
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    transition: transform 400ms ease-in 200ms, opacity 400ms ease-in 200ms;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-button {
     position: absolute;
